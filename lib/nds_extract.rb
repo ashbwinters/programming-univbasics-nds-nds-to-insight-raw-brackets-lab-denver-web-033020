@@ -16,6 +16,6 @@ def directors_totals(nds)
     outer_index += 1
   end 
   
-  return worldwide_gross
+  return directors_total_worldwide_gross
   
 end
