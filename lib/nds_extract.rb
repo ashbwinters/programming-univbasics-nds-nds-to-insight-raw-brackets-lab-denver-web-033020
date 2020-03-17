@@ -5,10 +5,10 @@ def directors_totals(nds)
   directors_total_worldwide_gross = {}
   outer_index = 0
   
-  when outer_index < nds.length do
+  while outer_index < nds.length do
     inner_index = 0
     directors_gross = 0
-    when inner_index < nds[outer_index][:movies].length do
+    while inner_index < nds[outer_index][:movies].length do
       directors_gross += nds[outer_index][:movies][inner_index][:worldwide_gross]
       inner_index += 1 
     end
