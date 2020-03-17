@@ -2,9 +2,14 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
+  worldwide_gross = {}
+  outer_index = 0
+  inner_index = 0
   
-  pp directors_database
-  # Remember, it's always OK to pretty print what you get *in* to make sure
+  when outer_index < nds.length do
+    
+  end  
+    # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
   #
