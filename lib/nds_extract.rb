@@ -10,7 +10,7 @@ def directors_totals(nds)
     directors_totals = 0
     director_name = nds[outer_index][:name]
     when inner_index < nds[outer_index][:movies].length do
-      directors_totals = 
+      directors_totals = nds
     
   end  
     # Remember, it's always OK to pretty print what you get *in* to make sure
