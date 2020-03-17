@@ -8,6 +8,7 @@ def directors_totals(nds)
   
   when outer_index < nds.length do
     director_name = nds[outer_index][:name]
+    
   end  
     # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
