@@ -9,7 +9,7 @@ def directors_totals(nds)
     inner_index = 0
     directors_gross = 0
     when inner_index < nds[outer_index][:movies].length do
-      directors_gross += nds[outer_index][:name][:movies][inner_index][:worldwide_gross]
+      directors_gross += nds[outer_index][:movies][inner_index][:worldwide_gross]
       inner_index += 1 
     end
     worldwide_gross["#{director_name}"] = directors_gross
