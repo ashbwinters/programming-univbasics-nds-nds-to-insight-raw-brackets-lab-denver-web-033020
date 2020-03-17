@@ -7,12 +7,16 @@ def directors_totals(nds)
   inner_index = 0
   
   when outer_index < nds.length do
-    directors_totals = 0
+    directors_gross = 0
     director_name = nds[outer_index][:name]
     when inner_index < nds[outer_index][:movies].length do
-      directors_totals = nds
-    
+      directors_gross += nds[outer_index][:name][:movies][inner_index][:worldwide_gross]
+      inner_index += 1 
+    end
+    directors_gross["#{director_name}"] = worldwide_gross
+    outer_index += 1
   end  
+  return worldwide_gross
     # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
